@@ -9,12 +9,15 @@ public class CorsConfig implements WebMvcConfigurer {
 
     @Override
     public void addCorsMappings(CorsRegistry registry) {
+
+
+
         // api cors 정책 설정
-        registry.addMapping("/api/**")
-                .allowedOrigins("http://localhost:3000") // api요청 허용 URL
-                .allowedMethods("GET", "POST", "PUT", "DELETE")
-                .allowedHeaders("*")
-                .allowCredentials(true)
-                .maxAge(3600);
+//        registry.addMapping("/api/**")
+//                .allowedOrigins("http://localhost:3000") // api요청 허용 URL
+//                .allowedMethods("GET", "POST", "PUT", "DELETE")
+//                .allowedHeaders("*")
+//                .allowCredentials(true)
+//                .maxAge(3600);
     }
 }
